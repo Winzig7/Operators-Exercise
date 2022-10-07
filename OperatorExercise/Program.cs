@@ -13,9 +13,12 @@ internal class Program
         Console.WriteLine($"{a}/{b} is {div} remainder {mod}");
 
 
-        var r = 20;
-        var pi= Math.PI;
-        var areaOfCirlce = pi * (r * r);
-        Console.WriteLine($"The area of a cirlcle with the radius {r} is {areaOfCirlce}");
+        var radius = double.Parse(Console.ReadLine());
+        var areaOfCircle = CalculateArea(radius);
+        Console.WriteLine($"The area of a circle with radius of {radius} is {areaOfCircle}");
+    }
+    public static double CalculateArea(double radius);
+    {
+    return Math.PI* ( radius* radius);
     }
 }
